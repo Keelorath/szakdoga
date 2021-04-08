@@ -20,8 +20,8 @@ class PostsTableSeeder extends Seeder
         if (!$dataType->exists) {
             $dataType->fill([
                 'name'                  => 'posts',
-                'display_name_singular' => __('voyager::seeders.data_types.post.singular'),
-                'display_name_plural'   => __('voyager::seeders.data_types.post.plural'),
+                'display_name_singular' => __('voyager::seeders.data_types.posts.singular'),
+                'display_name_plural'   => __('voyager::seeders.data_types.posts.plural'),
                 'icon'                  => 'voyager-news',
                 'model_name'            => 'TCG\\Voyager\\Models\\Post',
                 'policy_name'           => 'TCG\\Voyager\\Policies\\PostPolicy',
@@ -321,16 +321,16 @@ class PostsTableSeeder extends Seeder
         Permission::generateFor('posts');
 
         //Content
-        $post = $this->findPost('lorem-ipsum-post');
+        $post = $this->findPost('lorem-ipsum-posts');
         if (!$post->exists) {
             $post->fill([
                 'title'            => 'Lorem Ipsum Post',
                 'author_id'        => 0,
                 'seo_title'        => null,
                 'excerpt'          => 'This is the excerpt for the Lorem Ipsum Post',
-                'body'             => '<p>This is the body of the lorem ipsum post</p>',
+                'body'             => '<p>This is the body of the lorem ipsum posts</p>',
                 'image'            => 'posts/post1.jpg',
-                'slug'             => 'lorem-ipsum-post',
+                'slug'             => 'lorem-ipsum-posts',
                 'meta_description' => 'This is the meta description',
                 'meta_keywords'    => 'keyword1, keyword2, keyword3',
                 'status'           => 'PUBLISHED',
@@ -338,35 +338,35 @@ class PostsTableSeeder extends Seeder
             ])->save();
         }
 
-        $post = $this->findPost('my-sample-post');
+        $post = $this->findPost('my-sample-posts');
         if (!$post->exists) {
             $post->fill([
                 'title'     => 'My Sample Post',
                 'author_id' => 0,
                 'seo_title' => null,
                 'excerpt'   => 'This is the excerpt for the sample Post',
-                'body'      => '<p>This is the body for the sample post, which includes the body.</p>
+                'body'      => '<p>This is the body for the sample posts, which includes the body.</p>
                 <h2>We can use all kinds of format!</h2>
                 <p>And include a bunch of other stuff.</p>',
                 'image'            => 'posts/post2.jpg',
-                'slug'             => 'my-sample-post',
-                'meta_description' => 'Meta Description for sample post',
+                'slug'             => 'my-sample-posts',
+                'meta_description' => 'Meta Description for sample posts',
                 'meta_keywords'    => 'keyword1, keyword2, keyword3',
                 'status'           => 'PUBLISHED',
                 'featured'         => 0,
             ])->save();
         }
 
-        $post = $this->findPost('latest-post');
+        $post = $this->findPost('latest-posts');
         if (!$post->exists) {
             $post->fill([
                 'title'            => 'Latest Post',
                 'author_id'        => 0,
                 'seo_title'        => null,
-                'excerpt'          => 'This is the excerpt for the latest post',
-                'body'             => '<p>This is the body for the latest post</p>',
+                'excerpt'          => 'This is the excerpt for the latest posts',
+                'body'             => '<p>This is the body for the latest posts</p>',
                 'image'            => 'posts/post3.jpg',
-                'slug'             => 'latest-post',
+                'slug'             => 'latest-posts',
                 'meta_description' => 'This is the meta description',
                 'meta_keywords'    => 'keyword1, keyword2, keyword3',
                 'status'           => 'PUBLISHED',
@@ -374,7 +374,7 @@ class PostsTableSeeder extends Seeder
             ])->save();
         }
 
-        $post = $this->findPost('yarr-post');
+        $post = $this->findPost('yarr-posts');
         if (!$post->exists) {
             $post->fill([
                 'title'     => 'Yarr Post',
@@ -385,7 +385,7 @@ class PostsTableSeeder extends Seeder
 <p>Mizzen league keelhaul galleon tender cog chase Barbary Coast doubloon crack Jennys tea cup. Blow the man down lugsail fire ship pinnace cackle fruit line warp Admiral of the Black strike colors doubloon. Tackle Jack Ketch come about crimp rum draft scuppers run a shot across the bow haul wind maroon.</p>
 <p>Interloper heave down list driver pressgang holystone scuppers tackle scallywag bilged on her anchor. Jack Tar interloper draught grapple mizzenmast hulk knave cable transom hogshead. Gaff pillage to go on account grog aft chase guns piracy yardarm knave clap of thunder.</p>',
                 'image'            => 'posts/post4.jpg',
-                'slug'             => 'yarr-post',
+                'slug'             => 'yarr-posts',
                 'meta_description' => 'this be a meta descript',
                 'meta_keywords'    => 'keyword1, keyword2, keyword3',
                 'status'           => 'PUBLISHED',
@@ -395,7 +395,7 @@ class PostsTableSeeder extends Seeder
     }
 
     /**
-     * [post description].
+     * [posts description].
      *
      * @param [type] $slug [description]
      *

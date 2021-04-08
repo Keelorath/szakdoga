@@ -9,7 +9,7 @@ class CancellationAction extends AbstractAction
     public function getTitle()
     {
         // Action title which display in button based on current status
-        return 'Storno';
+        return __('voyager::generic.storno');
     }
 
     public function getIcon()

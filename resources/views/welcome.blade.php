@@ -127,6 +127,7 @@
 </head>
 <body>
 <h1>Üdvözlöm a GAIN BI számlázó alkalmazásában!</h1>
+<img src="storage/organizations/March2021/jeZn1idwy2wP0kYH6xs2.jpg">
 <p>Kérem jelentkezzen be!</p>
 
 

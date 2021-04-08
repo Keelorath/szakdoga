@@ -99,7 +99,7 @@ return [
         /*
          * Set whether or not the multilingual is supported by the BREAD input.
          */
-        'enabled' => false,
+        'enabled' => true,
 
         /*
          * Select default language
@@ -111,7 +111,7 @@ return [
          */
         'locales' => [
             'en',
-            //'pt',
+            'hu',
         ],
     ],
 
@@ -189,7 +189,7 @@ return [
 
     // Here you can specify additional assets you would like to be included in the master.blade
     'additional_css' => [
-        //'css/custom.css',
+        'css/fonts.css',
     ],
 
     'additional_js' => [

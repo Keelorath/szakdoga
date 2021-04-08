@@ -54,7 +54,7 @@ class TranslationsTableSeeder extends Seeder
         //
         $_fld = 'display_name_singular';
         $_tpl = ['data_types', $_fld];
-        $dtp = DataType::where($_fld, __('voyager::seeders.data_types.post.singular'))->firstOrFail();
+        $dtp = DataType::where($_fld, __('voyager::seeders.data_types.posts.singular'))->firstOrFail();
         if ($dtp->exists) {
             $this->trans('pt', $this->arr($_tpl, $dtp->id), 'Post');
         }
@@ -83,7 +83,7 @@ class TranslationsTableSeeder extends Seeder
         //
         $_fld = 'display_name_plural';
         $_tpl = ['data_types', $_fld];
-        $dtp = DataType::where($_fld, __('voyager::seeders.data_types.post.plural'))->firstOrFail();
+        $dtp = DataType::where($_fld, __('voyager::seeders.data_types.posts.plural'))->firstOrFail();
         if ($dtp->exists) {
             $this->trans('pt', $this->arr($_tpl, $dtp->id), 'Posts');
         }

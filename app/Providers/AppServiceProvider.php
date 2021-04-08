@@ -29,6 +29,7 @@ class AppServiceProvider extends ServiceProvider
         Voyager::addAction(\App\Actions\CloseAction::class);
         Voyager::addAction(\App\Actions\ArchiveAction::class);
         Voyager::addAction(\App\Actions\CancellationAction::class);
+        Voyager::addAction(\App\Actions\PrintAction::class);
 
 
     }

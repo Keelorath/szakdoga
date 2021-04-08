@@ -8,7 +8,7 @@ class CloseAction extends AbstractAction
 {
 public function getTitle()
 {
-return 'Close';
+return __('voyager::generic.close');
 }
 
 public function getIcon()
