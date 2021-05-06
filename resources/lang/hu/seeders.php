@@ -41,9 +41,9 @@ return [
             'singular' => 'Page',
             'plural'   => 'Pages',
         ],
-        'posts'     => [
-            'singular' => 'Post',
-            'plural'   => 'Posts',
+        'post'     => [
+            'singular' => 'Poszt',
+            'plural'   => 'Posztok',
         ],
         'role'     => [
             'singular' => 'Role',

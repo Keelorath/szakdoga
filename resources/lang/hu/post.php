@@ -5,7 +5,7 @@ return [
     'category'         => 'Post Category',
     'content'          => 'Post Content',
     'details'          => 'Post Details',
-    'excerpt'          => 'Excerpt <small>Small description of this posts</small>',
+    'excerpt'          => 'Excerpt <small>Small description of this post</small>',
     'image'            => 'Post Image',
     'meta_description' => 'Meta Description',
     'meta_keywords'    => 'Meta Keywords',
@@ -18,6 +18,6 @@ return [
     'status_pending'   => 'pending',
     'status_published' => 'published',
     'title'            => 'Cím',
-    'title_sub'        => 'The title for your posts',
+    'title_sub'        => 'The title for your post',
     'update'           => 'Update Post',
 ];

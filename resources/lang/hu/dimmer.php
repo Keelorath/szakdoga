@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'page'           => 'Page|Pages',
-    'page_link_text' => 'View all pages',
-    'page_text'      => 'You have :count :string in your database. Click on button below to view all pages.',
-    'posts'           => 'Post|Posts',
-    'post_link_text' => 'View all posts',
-    'post_text'      => 'You have :count :string in your database. Click on button below to view all posts.',
-    'user'           => 'User|Users',
-    'user_link_text' => 'View all users',
-    'user_text'      => 'You have :count :string in your database. Click on button below to view all users.',
+    'page'           => 'Oldal|Oldal',
+    'page_link_text' => 'Összes oldal megtekintése',
+    'page_text'      => ' :count  darab oldal van az adatbázisában. A lenti gombra kattintva megtekinthető őket.',
+    'post'           => 'Poszt|Posztok',
+    'post_link_text' => 'Összes poszt megtekintése',
+    'post_text'      => ' :count darab poszt van az adatbázisában. A lenti gombra kattintva megtekinthető őket.',
+    'user'           => 'Felhasználó|Felhasználók',
+    'user_link_text' => 'Összes felhasználó megtekintése',
+    'user_text'      => ' :count darab felhasználó van az adatbázisában. A lenti gombra kattintva megtekinthető őket.',
 ];

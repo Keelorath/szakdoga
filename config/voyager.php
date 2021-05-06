@@ -12,9 +12,9 @@ return [
 
     'user' => [
         'add_default_role_on_register' => true,
-        'default_role'                 => 'user',
-        'default_avatar'               => 'users/default.png',
-        'redirect'                     => '/admin',
+        'default_role' => 'user',
+        'default_avatar' => 'users/default.png',
+        'redirect' => '/admin',
     ],
 
     /*
@@ -128,17 +128,17 @@ return [
         // Add custom list items to navbar's dropdown
         'navbar_items' => [
             'voyager::generic.profile' => [
-                'route'      => 'voyager.profile',
-                'classes'    => 'class-full-of-rum',
+                'route' => 'voyager.profile',
+                'classes' => 'class-full-of-rum',
                 'icon_class' => 'voyager-person',
             ],
             'voyager::generic.home' => [
-                'route'        => '/',
-                'icon_class'   => 'voyager-home',
+                'route' => '/',
+                'icon_class' => 'voyager-home',
                 'target_blank' => true,
             ],
             'voyager::generic.logout' => [
-                'route'      => 'voyager.logout',
+                'route' => 'voyager.logout',
                 'icon_class' => 'voyager-power',
             ],
         ],
@@ -147,6 +147,7 @@ return [
             'TCG\\Voyager\\Widgets\\UserDimmer',
             'TCG\\Voyager\\Widgets\\PostDimmer',
             'TCG\\Voyager\\Widgets\\PageDimmer',
+            'App\\Widgets\\Profit',
         ],
 
     ],
@@ -196,8 +197,13 @@ return [
         //'js/custom.js',
     ],
 
+    'chartisan_js' => [
+        'js/echarts.min.js',
+        'js/chartisan_encharts.js',
+    ],
+
     'googlemaps' => [
-        'key'    => env('GOOGLE_MAPS_KEY', ''),
+        'key' => env('GOOGLE_MAPS_KEY', ''),
         'center' => [
             'lat' => env('GOOGLE_MAPS_DEFAULT_CENTER_LAT', '32.715738'),
             'lng' => env('GOOGLE_MAPS_DEFAULT_CENTER_LNG', '-117.161084'),
@@ -221,13 +227,13 @@ return [
         ],
         */
         //Path for media-manager. Relative to the filesystem.
-        'path'                => '/',
-        'show_folders'        => true,
-        'allow_upload'        => true,
-        'allow_move'          => true,
-        'allow_delete'        => true,
+        'path' => '/',
+        'show_folders' => true,
+        'allow_upload' => true,
+        'allow_move' => true,
+        'allow_delete' => true,
         'allow_create_folder' => true,
-        'allow_rename'        => true,
+        'allow_rename' => true,
         /*'watermark'           => [
             'source'         => 'watermark.png',
             'position'       => 'bottom-left',

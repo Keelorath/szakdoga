@@ -14,8 +14,8 @@ return [
     'sSearch'         => 'Keresés:',
     'sZeroRecords'    => 'Nincs a keresésnek megfelelő találat',
     'oPaginate'       => [
-        'sFirst'    => 'First',
-        'sLast'     => 'Last',
+        'sFirst'    => 'Első',
+        'sLast'     => 'Utolsó',
         'sNext'     => 'Következő',
         'sPrevious' => 'Előző',
     ],
