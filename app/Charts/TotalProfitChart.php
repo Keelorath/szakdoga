@@ -7,6 +7,8 @@ namespace App\Charts;
 use Chartisan\PHP\Chartisan;
 use ConsoleTVs\Charts\BaseChart;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Voyager\PDFController;
+use Illuminate\Support\Facades\DB;
 
 class TotalProfitChart extends BaseChart
 {
@@ -21,10 +23,17 @@ class TotalProfitChart extends BaseChart
 
     public function handler(Request $request): Chartisan
     {
+        $closedList = DB::table('invoices')->where('status', "=", "CLOSED")->get();
+        $closedCount = $closedList->count();
+        $arcihvedList = DB::table('invoices')->where('status', "=", "ARCHIVED")->get();
+        $archivedCount = $arcihvedList->count();
+        $openList = DB::table('invoices')->where('status', "=", "OPEN")->get();
+        $openCount = $openList->count();
         return Chartisan::build()
-            ->labels(['January', 'February', 'March', 'April'])
-            ->dataset('Profit', [1, 4, 2, 6])
-            ->dataset('Profit 2', [3, 2, 5, 4])
-            ->dataset('Profit 3', [6, 5, 4, 3]);
+            ->labels([__('generic.invoices_type')])
+            ->dataset(__('generic.archived'), [$archivedCount])
+            ->dataset(__('generic.closed'), [$closedCount])
+            ->dataset(__('generic.opened'), [$openCount]);
+        // TODO: Rakd be a fordításokat angolra is!
     }
 }

@@ -133,6 +133,7 @@ class PDFController extends VoyagerBaseController
             )
             ->distinct()
             ->get();
+
         $partnerAddress= DB::table('invoices')
             ->join('partners','partners.id','=','invoices.partner_id')
             ->where('partners.id',"=",$invoice->partner_id)
@@ -183,6 +184,8 @@ class PDFController extends VoyagerBaseController
             )
             ->distinct()
             ->get();
+
+
         $productNetto= DB::table('invoices')
             ->join('connections','invoice_id','=','invoices.id')
             ->join('products','product_id','=','products.id')
@@ -250,7 +253,7 @@ class PDFController extends VoyagerBaseController
             'date' => date('d/m/Y'),
             'futureDate' => Carbon::now()->addMonth()->format('d/m/Y')
         ];
-        //dd($data);
+
 
         $pdf = PDF::loadView('testPDF', $data);
 

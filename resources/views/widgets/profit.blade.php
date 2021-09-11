@@ -13,10 +13,9 @@
                 el: '#chart',
                 url: "@chart('profitchart')",
                 hooks: new ChartisanHooks()
-                    .colors(['#ECC94B', '#4299E1', '#00FF00'])
+                    .colors(['#E4F913', '#F93C13', '#00FF00'])
                     .beginAtZero()
                     .legend({position: 'bottom'})
-                    .title('These are the sales at the first four month!')
                     .datasets([{ type: 'bar', fill: false }, 'bar']),
             });
         </script>
